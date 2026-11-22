@@ -56,30 +56,30 @@
 
         <div class="film__layout">
           <div class="film__chapters">
-            <div class="chapter chapter--open is-active" data-from="0" data-to="0.18">
+            <div class="chapter chapter--open is-active" data-from="0" data-to="0.14">
               <p class="eyebrow" data-i18n="hero.eyebrow">Parrucchieri &amp; Barber · Milano Niguarda</p>
               <h1 class="hero-title" translate="no" aria-label="Style86">STYLE<span class="wm86">86</span></h1>
               <p class="hero-motto" translate="no">Enter as you are.<br><em>Leave as art.</em></p>
-              <p class="hero-lede" data-i18n="hero.lede">Taglio, barba e colore fatti con calma, precisione e mani esperte.</p>
+              <p class="hero-lede" data-i18n="hero.lede">Tagli, colore e grooming curati in ogni dettaglio.</p>
               <div class="hero-actions">
                 <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="cta.bookOnline">Prenota online</a>
                 <a class="btn btn--line" href="#servizi" data-i18n="cta.prices">Vedi i prezzi</a>
               </div>
             </div>
 
-            <div class="chapter" data-from="0.22" data-to="0.42">
+            <div class="chapter" data-from="0.19" data-to="0.33">
               <p class="chapter__num">I · <span data-i18n="ch1.k">Barber</span></p>
-              <h2 class="chapter__title" data-i18n-html="ch1.t">Sfumature pulite.<br>Barba a macchina.</h2>
+              <h2 class="chapter__title" data-i18n-html="ch1.t">Sfumature pulite.<br>Rifinitura barba.</h2>
               <p class="chapter__text" data-i18n="ch1.p">Ogni taglio parte dalla forma del viso e finisce con un contorno netto.</p>
             </div>
 
-            <div class="chapter" data-from="0.46" data-to="0.64">
+            <div class="chapter" data-from="0.37" data-to="0.66">
               <p class="chapter__num">II · <span data-i18n="ch2.k">Colore</span></p>
               <h2 class="chapter__title" data-i18n-html="ch2.t">Colore senza<br>ammoniaca.</h2>
               <p class="chapter__text" data-i18n="ch2.p">Schiariture, balayage e trattamenti con Olaplex e Redken, per capelli che restano sani.</p>
             </div>
 
-            <div class="chapter" data-from="0.70" data-to="1.01">
+            <div class="chapter" data-from="0.71" data-to="1.01">
               <p class="chapter__num">III · <span data-i18n="ch3.k">I clienti</span></p>
               <p class="rating-big"><span class="rating-big__n">4,8</span><span class="rating-big__of">/5</span></p>
               <h2 class="chapter__title chapter__title--sm" data-i18n-html="ch3.t">Oltre <span class="num">460</span> recensioni<br>su Treatwell.</h2>
@@ -105,7 +105,7 @@
     <div class="strip" aria-label="Specialità">
       <div class="strip__track">
         <span data-i18n="strip.1">Colore senza ammoniaca</span><i aria-hidden="true">✦</i>
-        <span data-i18n="strip.2">Barba a macchina</span><i aria-hidden="true">✦</i>
+        <span data-i18n="strip.2">Rifinitura barba</span><i aria-hidden="true">✦</i>
         <span data-i18n="strip.3">Schiariture</span><i aria-hidden="true">✦</i>
         <span>Olaplex</span><i aria-hidden="true">✦</i>
         <span>Redken</span><i aria-hidden="true">✦</i>
@@ -130,32 +130,94 @@
 
         <!-- NOTE: prices marked data-confirm="1" are estimates; confirm with the salon. -->
         <div class="panel" role="tabpanel" id="panel-uomo" aria-labelledby="tab-uomo">
-          <ul class="menu">
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.taglioUomo">Taglio uomo</span><span class="menu__dur">30 min</span><span class="menu__dots"></span><span class="menu__price">da €15</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.fade">Skin fade / sfumatura</span><span class="menu__dur">40 min</span><span class="menu__dots"></span><span class="menu__price">da €18</span></li>
-            <li class="menu__item"><span class="menu__name" data-i18n="s.taglioBarba">Taglio + barba</span><span class="menu__dur">45 min</span><span class="menu__dots"></span><span class="menu__price">€20–25</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.barba">Barba a macchina</span><span class="menu__dur">15 min</span><span class="menu__dots"></span><span class="menu__price">da €7</span></li>
-            <li class="menu__item"><span class="menu__name" data-i18n="s.ritoccoUomo">Ritocco colore uomo</span><span class="menu__dur">30 min</span><span class="menu__dots"></span><span class="menu__price">€20–30</span></li>
-          </ul>
+          <div class="svc-grid">
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.taglioUomo">Taglio uomo</h3><p class="svc__price">da €15</p></div>
+              <p class="svc__desc" data-i18n="d.taglioUomo">Consulenza, taglio su misura e styling finale.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>30 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.fade">Skin fade / sfumatura</h3><p class="svc__price">da €18</p></div>
+              <p class="svc__desc" data-i18n="d.fade">Sfumatura graduale dalla pelle, rifinita a mano.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>40 min</p>
+            </article>
+            <article class="svc">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.taglioBarba">Taglio + barba</h3><p class="svc__price">€20–25</p></div>
+              <p class="svc__desc" data-i18n="d.taglioBarba">Taglio completo, rifinitura e contorno della barba.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>45 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.barba">Rifinitura barba</h3><p class="svc__price">da €7</p></div>
+              <p class="svc__desc" data-i18n="d.barba">Forma, lunghezza e contorni netti con macchinetta e rasoio.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>15 min</p>
+            </article>
+            <article class="svc">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.ritoccoUomo">Ritocco colore uomo</h3><p class="svc__price">€20–30</p></div>
+              <p class="svc__desc" data-i18n="d.ritoccoUomo">Copertura dei capelli bianchi con un risultato naturale.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>30 min</p>
+            </article>
+          </div>
+          <div class="panel__cta">
+            <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="svc.book1">Prenota un servizio uomo</a>
+            <a class="link-arrow" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener"><span data-i18n="svc.cta">Listino completo su Treatwell</span> <span aria-hidden="true">→</span></a>
+          </div>
         </div>
         <div class="panel" role="tabpanel" id="panel-donna" aria-labelledby="tab-donna" hidden>
-          <ul class="menu">
-            <li class="menu__item"><span class="menu__name" data-i18n="s.piega">Shampoo e piega</span><span class="menu__dur">40 min</span><span class="menu__dots"></span><span class="menu__price">€20–25</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.taglioDonna">Taglio, shampoo e piega</span><span class="menu__dur">60 min</span><span class="menu__dots"></span><span class="menu__price">da €35</span></li>
-            <li class="menu__item"><span class="menu__name" data-i18n="s.permanente">Permanente</span><span class="menu__dur">90 min</span><span class="menu__dots"></span><span class="menu__price">da €60</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.acconciatura">Acconciatura per eventi</span><span class="menu__dur">60 min</span><span class="menu__dots"></span><span class="menu__price">da €40</span></li>
-          </ul>
+          <div class="svc-grid">
+            <article class="svc">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.piega">Shampoo e piega</h3><p class="svc__price">€20–25</p></div>
+              <p class="svc__desc" data-i18n="d.piega">Lavaggio con prodotti professionali e piega liscia o mossa.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>40 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.taglioDonna">Taglio, shampoo e piega</h3><p class="svc__price">da €35</p></div>
+              <p class="svc__desc" data-i18n="d.taglioDonna">Consulenza, taglio, lavaggio e piega su misura.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>60 min</p>
+            </article>
+            <article class="svc">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.permanente">Permanente</h3><p class="svc__price">da €60</p></div>
+              <p class="svc__desc" data-i18n="d.permanente">Onde e volume duraturi, studiati sul tuo tipo di capello.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>90 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.acconciatura">Acconciatura per eventi</h3><p class="svc__price">da €40</p></div>
+              <p class="svc__desc" data-i18n="d.acconciatura">Raccolti e onde per cerimonie, feste e servizi fotografici.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>60 min</p>
+            </article>
+          </div>
+          <div class="panel__cta">
+            <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="svc.book2">Prenota un servizio donna</a>
+            <a class="link-arrow" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener"><span data-i18n="svc.cta">Listino completo su Treatwell</span> <span aria-hidden="true">→</span></a>
+          </div>
         </div>
         <div class="panel" role="tabpanel" id="panel-colore" aria-labelledby="tab-colore" hidden>
-          <ul class="menu">
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.colore">Colore senza ammoniaca</span><span class="menu__dur">75 min</span><span class="menu__dots"></span><span class="menu__price">da €35</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.schiariture">Schiariture / balayage</span><span class="menu__dur">150 min</span><span class="menu__dots"></span><span class="menu__price">da €70</span></li>
-            <li class="menu__item" data-confirm="1"><span class="menu__name" data-i18n="s.olaplex">Trattamento Olaplex</span><span class="menu__dur">20 min</span><span class="menu__dots"></span><span class="menu__price">da €20</span></li>
-            <li class="menu__item"><span class="menu__name" data-i18n="s.botox">Botox capelli</span><span class="menu__dur">60 min</span><span class="menu__dots"></span><span class="menu__price">€45–50</span></li>
-          </ul>
+          <div class="svc-grid">
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.colore">Colore senza ammoniaca</h3><p class="svc__price">da €35</p></div>
+              <p class="svc__desc" data-i18n="d.colore">Colore pieno, delicato su cute e capelli.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>75 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.schiariture">Schiariture / balayage</h3><p class="svc__price">da €70</p></div>
+              <p class="svc__desc" data-i18n="d.schiariture">Luci naturali e passaggi morbidi dal castano al biondo.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>150 min</p>
+            </article>
+            <article class="svc" data-confirm="1">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.olaplex">Trattamento Olaplex</h3><p class="svc__price">da €20</p></div>
+              <p class="svc__desc" data-i18n="d.olaplex">Ricostruisce i legami del capello durante e dopo il colore.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>20 min</p>
+            </article>
+            <article class="svc">
+              <div class="svc__head"><h3 class="svc__name" data-i18n="s.botox">Botox capelli</h3><p class="svc__price">€45–50</p></div>
+              <p class="svc__desc" data-i18n="d.botox">Trattamento ristrutturante per capelli lucidi e disciplinati.</p>
+              <p class="svc__dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>60 min</p>
+            </article>
+          </div>
+          <div class="panel__cta">
+            <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="svc.book3">Prenota colore o trattamento</a>
+            <a class="link-arrow" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener"><span data-i18n="svc.cta">Listino completo su Treatwell</span> <span aria-hidden="true">→</span></a>
+          </div>
         </div>
-
-        <a class="btn btn--line services__cta" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="svc.cta">Listino completo e prenotazione</a>
       </div>
     </section>
 
@@ -167,7 +229,7 @@
         </figure>
         <div class="studio__copy">
           <p class="eyebrow" data-i18n="studio.eyebrow">Lo studio</p>
-          <h2 class="section__title" data-i18n-html="studio.title">Un salone di quartiere,<br>con standard da centro.</h2>
+          <h2 class="section__title" data-i18n-html="studio.title">La qualità di un grande salone,<br>vicino a te.</h2>
           <p data-i18n="studio.p1">Style86 è a Niguarda, in via Luigi Ornato. Uomini e donne entrano per un taglio veloce o per un cambio di colore completo, e ricevono la stessa attenzione. Il motto è scritto sull'insegna:</p>
           <blockquote class="motto" translate="no">Enter as you are, leave as art.</blockquote>
           <p data-i18n="studio.p2">Sami e il suo staff lavorano con prodotti professionali Olaplex e Redken e con colori senza ammoniaca. I clienti tornano per il contorno preciso della barba, l'ambiente pulito e il prezzo onesto.</p>
@@ -262,12 +324,13 @@
     <!-- ───────── Final CTA ───────── -->
     <section class="final">
       <div class="final__bg" aria-hidden="true"><img src="media/hero-2.jpg" alt="" loading="lazy"></div>
-      <div class="wrap final__inner">
-        <h2 class="final__title" data-i18n-html="final.title">La tua prossima<br><em>sedia è libera.</em></h2>
+      <div class="wrap final__inner"><div class="final__card">
+        <h2 class="final__title" data-i18n-html="final.title">Il tuo prossimo<br><em>appuntamento ti aspetta.</em></h2>
         <p data-i18n="final.p">Scegli servizio e orario online in meno di un minuto. Paghi in salone.</p>
         <div class="hero-actions">
           <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="cta.bookOnline">Prenota online</a>
           <a class="btn btn--line" href="https://wa.me/393663057307" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
         </div>
       </div>
     </section>
