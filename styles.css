@@ -238,9 +238,9 @@ p { margin: 0; }
 /* Services */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
 .tab {
-  min-height: 44px; padding: 0 22px; border-radius: 999px; cursor: pointer;
+  min-height: 50px; padding: 0 26px; border-radius: 999px; cursor: pointer;
   background: transparent; color: var(--muted); border: 1px solid var(--line);
-  font: 600 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase;
+  font: 600 13px/1 var(--body); letter-spacing: .14em; text-transform: uppercase;
   transition: color .2s, border-color .2s, background-color .2s;
 }
 .tab:hover { color: var(--ink); border-color: rgba(242, 236, 227, .35); }

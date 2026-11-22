@@ -34,3 +34,6 @@ camera files would make the hero sharper on large screens.
 ## Type
 Cormorant Garamond (headings, hero 500, wordmark) + Manrope (body; nav and buttons 600).
 Brand marks carry `translate="no"` so browser auto-translation cannot break the logo.
+
+## Deploying
+Run `python3 tools/stamp.py` before pushing to `main`: it versions the CSS/JS URLs so returning visitors always get matching files.

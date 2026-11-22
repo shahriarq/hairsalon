@@ -314,6 +314,7 @@
     "svc.eyebrow": "Price list", "svc.title": "Services and prices",
     "svc.sub": "Indicative prices. The always-current menu and live availability are on Treatwell.",
     "svc.tab1": "Men", "svc.tab2": "Women", "svc.tab3": "Colour & care", "svc.cta": "Full price list on Treatwell",
+    "w.from": "from",
     "svc.book1": "Book a men's service", "svc.book2": "Book a women's service", "svc.book3": "Book colour or care",
     "d.taglioUomo": "Consultation, a tailored cut and finishing style.",
     "d.fade": "A gradual fade from the skin, finished by hand.",
