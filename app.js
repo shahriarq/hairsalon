@@ -240,6 +240,15 @@
       if (e.key === "ArrowRight") { e.preventDefault(); next.click(); }
       if (e.key === "ArrowLeft") { e.preventDefault(); prev.click(); }
     });
+    // Trackpads send small sideways deltas inside vertical swipes; the browser
+    // then latches the whole gesture to the rail and the page stops scrolling.
+    // A mostly-vertical gesture over the rail is handed straight to the page.
+    rail.addEventListener("wheel", (e) => {
+      if (e.ctrlKey || e.deltaX === 0 || Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+      e.preventDefault();
+      const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? window.innerHeight : 1;
+      window.scrollBy(0, e.deltaY * unit);
+    }, { passive: false });
 
     let down = false, moved = false, startX = 0, startLeft = 0, lastX = 0, lastT = 0, vel = 0, raf = 0;
     const settle = () => rail.classList.toggle("is-dragging", false); // snapping resumes
