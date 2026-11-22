@@ -306,7 +306,7 @@
     "hero.scroll": "Scroll",
     "ch1.k": "Barber", "ch1.t": "Clean fades.<br>Clipper-sharp beards.", "ch1.p": "Every cut starts from the shape of your face and ends with a crisp line.",
     "ch2.k": "Colour", "ch2.t": "Ammonia-free<br>colour.", "ch2.p": "Highlights, balayage and treatments with Olaplex and Redken, so hair stays healthy.",
-    "ch3.k": "Clients", "ch3.t": "Over 460 reviews<br>on Treatwell.",
+    "ch3.k": "Clients", "ch3.t": "Over <span class=\"num\">460</span> reviews<br>on Treatwell.",
     "strip.1": "Ammonia-free colour", "strip.2": "Clipper beard trims", "strip.3": "Highlights", "strip.4": "Men · Women",
     "svc.eyebrow": "Price list", "svc.title": "Services and prices",
     "svc.sub": "Indicative prices. The always-current menu and live availability are on Treatwell.",
@@ -335,6 +335,20 @@
   $$("[data-i18n]").forEach((el) => { IT[el.dataset.i18n] = el.textContent; });
   $$("[data-i18n-html]").forEach((el) => { IT[el.dataset.i18nHtml] = el.innerHTML; });
 
+  /* ───────── Back to top ───────── */
+  const toTop = $("#toTop");
+  if (toTop) {
+    // appear once the hero film is over, so it never covers the film's progress bar
+    const showTop = () => toTop.classList.toggle("is-visible", window.scrollY > film.offsetTop + film.offsetHeight - window.innerHeight * 0.5);
+    window.addEventListener("scroll", showTop, { passive: true });
+    showTop();
+    toTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      const skip = $(".wordmark");
+      if (skip) skip.focus({ preventScroll: true });
+    });
+  }
+
   const langBtn = $("#lang");
 
   function applyLang() {
@@ -342,8 +356,9 @@
     $$("[data-i18n]").forEach((el) => { const v = dict[el.dataset.i18n]; if (v != null) el.textContent = v; });
     $$("[data-i18n-html]").forEach((el) => { const v = dict[el.dataset.i18nHtml]; if (v != null) el.innerHTML = v; });
     document.documentElement.lang = lang;
-    langBtn.textContent = lang === "en" ? "IT" : "EN";
+    $$("[data-l]", langBtn).forEach((s) => s.classList.toggle("is-on", s.dataset.l === lang));
     langBtn.setAttribute("aria-label", lang === "en" ? "Passa all'italiano" : "Switch to English");
+    if (toTop) toTop.setAttribute("aria-label", lang === "en" ? "Back to top" : "Torna all'inizio");
     capIndex = -1;
     if (ctx && !reduceMotion) render(current);
     if (todayRow) todayRow.querySelector("th").dataset.today = lang === "en" ? "Today" : "Oggi";

@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" translate="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Style86 Milano</title>
+  <meta name="google" content="notranslate">
   <meta name="description" content="Style86 — parrucchieri e barber a Milano Niguarda. Taglio, barba, colore senza ammoniaca e schiariture. Prenota online.">
   <meta name="theme-color" content="#0e0c0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +41,7 @@
         <a href="#orari" data-i18n="nav.visit">Orari</a>
       </nav>
       <div class="nav__actions">
-        <button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button>
+        <button class="lang" id="lang" type="button" aria-label="Switch to English"><span data-l="it">IT</span><span class="lang__sep" aria-hidden="true">/</span><span data-l="en">EN</span></button>
         <a class="btn btn--glass" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="cta.book">Prenota</a>
       </div>
     </div>
@@ -81,7 +82,7 @@
             <div class="chapter" data-from="0.70" data-to="1.01">
               <p class="chapter__num">III · <span data-i18n="ch3.k">I clienti</span></p>
               <p class="rating-big"><span class="rating-big__n">4,8</span><span class="rating-big__of">/5</span></p>
-              <h2 class="chapter__title chapter__title--sm" data-i18n-html="ch3.t">Oltre 460 recensioni<br>su Treatwell.</h2>
+              <h2 class="chapter__title chapter__title--sm" data-i18n-html="ch3.t">Oltre <span class="num">460</span> recensioni<br>su Treatwell.</h2>
               <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="cta.reserve">Prenota il tuo posto</a>
             </div>
           </div>
@@ -287,6 +288,8 @@
     <a class="btn btn--rose" href="https://www.treatwell.it/salone/style86/" target="_blank" rel="noopener" data-i18n="cta.book">Prenota</a>
     <a class="btn btn--glass" href="tel:+393663057307" data-i18n="cta.call">Chiama</a>
   </div>
+
+  <button class="totop" id="toTop" type="button" aria-label="Torna all'inizio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
   <script src="app.js" defer></script>
 </body>
